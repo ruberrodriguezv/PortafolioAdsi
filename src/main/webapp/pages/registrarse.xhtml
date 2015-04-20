@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="/template.xhtml">
+
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateUsuariosTitle}"></h:outputText>
+        </ui:define>
+
+        <ui:define name="body">
+            <form class="Form" jsf:id="userForm">
+                <input class="FormInput" type="text" placeholder="Nombres" required="true" jsf:value="#{usuariosController.currentUser.nombres}"/>
+                <input class="FormInput" type="text" placeholder="Apellidos" required="true" jsf:value="#{usuariosController.currentUser.apellidos}"/>
+                <input class="FormInput" type="tel" placeholder="Teléfono" required="true" jsf:value="#{usuariosController.currentUser.telefono}"/>
+                <p:autoComplete styleClass="FormInput" 
+                                value="#{usuariosController.ciudad}"
+                                pt:required="true"
+                                placeholder="Ciudad Domicilio"
+                                completeMethod="#{usuariosController.getCiudadesList}"
+                                var="itemCiudad"
+                                itemValue="#{itemCiudad.ciudadesPK.idCiudad},#{itemCiudad.ciudadesPK.idDepartamento}"
+                                itemLabel="#{itemCiudad}"
+                                forceSelection="true" /> 
+                <input class="FormInput" type="text" placeholder="Dirección Residencia" required="true" jsf:value="#{usuariosController.currentUser.direccion}"/>
+                <input class="FormInput" type="email" placeholder="Email" jsf:value="#{usuariosController.currentUser.email}"/>
+                <input class="FormInput" type="date" placeholder="Fecha Nacimiento" required="true" jsf:value="#{usuariosController.currentUser.fechaNac}">
+                    <f:convertDateTime pattern="yyyy-MM-dd"/>
+                </input>
+                <select name="sexo" class="FormInput" jsf:value="#{usuariosController.currentUser.sexo}" required="true" size="1">
+                    <f:selectItem itemLabel="Seleccione uno..."/>
+                    <f:selectItem itemLabel="Femenino" itemValue="F"/>
+                    <f:selectItem itemLabel="Masculino" itemValue="M"/>
+                </select>
+                <input class="FormInput" type="password" placeholder="Password" required="true" jsf:value="#{usuariosController.currentUser.password}"/>
+                <input class="Button" type="submit" value="Registrarse" jsf:action="#{usuariosController.create}"/>            
+            </form>            
+        </ui:define>
+    </ui:composition>
+
+</html>
+

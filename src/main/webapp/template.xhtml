@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+    <head jsf:id="head">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+        <title>Document</title>
+    </head>
+    <body jsf:id="body">      
+
+        <header class="Header">
+            <nav class="MainMenu">
+                <ul class="MainMenu-list">
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" jsf:outcome="/index.xhtml">Inicio</a>
+                    </li>
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" href="#">Servicios</a>
+                    </li>
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" href="#">Sedes</a>
+                    </li>
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" href="#">Contáctenos</a>
+                    </li>
+                    <li class="Sesion">
+                        <a href="#">Iniciar Sesión</a>
+                    </li>
+                    <li class="Registrarse">
+                        <a jsf:outcome="/pages/registrarse.xhtml">Registrarse</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <ui:insert name="body">Default Body</ui:insert> 
+         
+        <footer class="Footer">
+            footer
+        </footer>
+    </body>
+
+</html>
