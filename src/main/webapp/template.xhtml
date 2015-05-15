@@ -6,34 +6,91 @@
 
     <head jsf:id="head">
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><ui:insert name="title">Portafolio</ui:insert></title>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/foundation-5.5.2/css/foundation.css" />
+        <script src="#{request.contextPath}/resources/foundation-5.5.2/js/vendor/modernizr.js"></script>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/foundation-5.5.2/css/normalize.css"/>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/estilos.css"/>
     </head>
     <body jsf:id="body">      
 
         <header class="Header">
-            <nav class="MainMenu">
-                <ul class="MainMenu-list">
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" jsf:outcome="/index.xhtml">Inicio</a>
-                    </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#">Servicios</a>
-                    </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#">Sedes</a>
-                    </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#">Contáctenos</a>
-                    </li>
-                    <li class="Sesion">
-                        <a href="#">Iniciar Sesión</a>
-                    </li>
-                    <li class="Registrarse">
-                        <a jsf:outcome="/pages/registrarse.xhtml">Registrarse</a>
-                    </li>
-                </ul>
+            <div class="fixed">     
+            <nav class="MainMenu top-bar hide-for-small data-topbar" role="navigation" >
+                    <ul class="title-area">
+                        <li class="name">
+                          <h1><a href="#">Portafolio</a></h1>
+                        </li>
+                        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                    </ul>
+                    <section class="top-bar-section">
+                        <ul class="MainMenu-list left">
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/index.xhtml">Inicio</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/pages/servicios.xhtml">Servicios</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/pages/sedes.xhtml">Sedes</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/pages/contactenos.xhtml">Contáctenos</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a jsf:outcome="/pages/isesion.xhtml">Iniciar Sesión</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a jsf:outcome="/pages/registrarse.xhtml">Registrarse</a>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </section>
+                </nav>
+            <nav class="tab-bar show-for-small">
+                <a class="left-off-canvas-toggle menu-icon" aria-expanded="false">
+                    <span>Portafolio</span>
+                </a>   
             </nav>
+                <aside class="marketing-left-off-canvas-menu">
+                    <ul class="off-canvas-list">
+                        <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/index.xhtml">Inicio</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/pages/servicios.xhtml">Servicios</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/pages/sedes.xhtml">Sedes</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a class="MainMenu-link" jsf:outcome="/pages/contactenos.xhtml">Contáctenos</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a jsf:outcome="/pages/isesion.xhtml">Iniciar Sesión</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="MainMenu-item">
+                                <a jsf:outcome="/pages/registrarse.xhtml">Registrarse</a>
+                            </li>
+                            <li class="divider"></li>
+
+                    </ul>
+
+                </aside>
+            </div>    
         </header>
 
         <ui:insert name="body">Default Body</ui:insert> 
@@ -41,6 +98,12 @@
         <footer class="Footer">
             footer
         </footer>
+        
+        <script src="#{request.contextPath}/resources/foundation-5.5.2/js/foundation.min.js"></script>
+        <script src="#{request.contextPath}/resources/foundation-5.5.2/js/foundation/foundation.topbar.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
     </body>
 
 </html>
