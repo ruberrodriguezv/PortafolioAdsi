@@ -1,9 +1,12 @@
-.Formulario{
-    margin-top: 44px;
+.Header{
+        background-image: url("../images/header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+        height: 500px;
 }
-@media screen and (min-width: 35.61111em){
-.top-bar{ 
-  background: #007ba4;
-  overflow: visible;
-}
+
+.Footer{
+        background: #333333;
+        height: 250px;
 }
