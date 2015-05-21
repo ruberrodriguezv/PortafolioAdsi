@@ -15,7 +15,15 @@
         </ui:define>
 
         <ui:define name="body">
-                        
+            <section class="Formulario-isesion row panel">
+                <article class="small medium-6 large-6 columns">
+                    <form class="Form-isesion" jsf:id="userForm">
+                        <input class="FormInput" type="email" placeholder="Email" jsf:value="#{usuariosController.currentUser.email}"/>
+                        <input class="FormInput" type="password" placeholder="Password" required="true" jsf:value="#{usuariosController.currentUser.password}"/>
+                        <input class="button radius" type="submit" value="Iniciar Sesión" jsf:action="#{usuariosController.create}"/>            
+                    </form>
+                </article>    
+            </section>
         </ui:define>
     </ui:composition>
 
