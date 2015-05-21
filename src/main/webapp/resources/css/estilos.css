@@ -1,3 +1,10 @@
+/*Utilidades*/
+.U-title{
+    border-bottom: 2px dashed #003f54;
+    text-align: center;
+}
+
+
 .Header{
         background-image: url("../images/header.jpg");
 	background-position: center;
@@ -13,4 +20,31 @@
 
 .Formulario-isesion{
     margin-top: 20px;
+}
+
+.Formulario{
+    margin-top: 20px;
+}
+.Profile{
+    text-align: center;
+}
+
+.Profile-link{
+    border-radius: 2em;
+    color: white;
+    margin-right: : .5em;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+.Profile-background1{
+    background: #0084B4;
+}
+
+.Profile-background2{
+    background: #002DB2;
+}
+
+.Profile-background3{
+    background: #0084B4;
 }
