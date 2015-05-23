@@ -27,14 +27,8 @@
 }
 .Profile{
     text-align: center;
-}
-
-.Profile-link{
-    border-radius: 2em;
-    color: white;
-    margin-right: : .5em;
-    padding: .5em 1em;
-    text-decoration: none;
+    background: #ECEBEC;
+    
 }
 
 .Profile-background1{
@@ -47,4 +41,29 @@
 
 .Profile-background3{
     background: #0084B4;
+}
+.Profile-link{
+    border-radius: 2em;
+    color: white;
+    margin-right: : .5em;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+.Profile-title{
+    margin-top: 0;
+}
+
+
+.Work{
+    background: #ECEBEC;
+    text-align: center;
+}
+
+.Work-item{
+    display: inline-block;
+    width: 30%;
+}
+.Work-title{
+    padding-top: .5em;
+    margin-top: 0;
 }
