@@ -42,10 +42,11 @@
 .Profile-background3{
     background: #0084B4;
 }
+
 .Profile-link{
     border-radius: 2em;
     color: white;
-    margin-right: : .5em;
+    margin-bottom: 0.5em;
     padding: .5em 1em;
     text-decoration: none;
 }
@@ -59,11 +60,39 @@
     text-align: center;
 }
 
-.Work-item{
-    display: inline-block;
-    width: 30%;
+.Work-image{
+    width: 120px;
+    height: 128px
 }
+
+.Work-imageContainer{
+    float: left;
+    margin: 1.7em .5em 0 0;
+}
+.Work-item{
+    background: white;
+    min-height: 128px;
+    display: inline-block;
+    width: 450px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-style: ridge;
+    border-radius: .5em;
+}
+    
 .Work-title{
-    padding-top: .5em;
     margin-top: 0;
+}
+    
+.Titulo-item{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0em 0em 0 0;
+    border-bottom: .2em solid #333333;
+}
+.Contenido-item{
+    width: auto;
+    margin-bottom: 0;
+    text-align: justify;
 }
