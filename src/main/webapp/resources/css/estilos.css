@@ -16,7 +16,7 @@
 
 .Footer{
         background: #333333;
-        height: 250px;
+        background-size: cover;
 }
 .Footer-title,.Footer-titleFirst,.Footer-titleSecond,.Footer-titleLink{
     display: inline-block;
@@ -77,6 +77,7 @@
     text-align: center;
     position: relative;
     top: 20px;
+    background: #333333;
 }
 
 .Footer-titleFirst,.Footer-titleSecond{
