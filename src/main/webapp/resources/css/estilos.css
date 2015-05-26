@@ -11,13 +11,99 @@
 	background-repeat: no-repeat;
 	background-size: cover;
         height: 500px;
+        text-align: center;
 }
 
 .Footer{
         background: #333333;
         height: 250px;
 }
+.Footer-title,.Footer-titleFirst,.Footer-titleSecond,.Footer-titleLink{
+    display: inline-block;
+}
 
+.Footer-servicios,.Footer-contactenos,.Footer-inises,.Footer-registrarse{
+    display: inline-block;
+    margin-top: 1em;
+    margin-right: 2em;
+}
+
+.Footer-contactenos{
+    width: 300px;
+}
+
+.Footer-tituloContenidos,.Footer-contenidos{
+    width: auto;
+    text-align: left;
+    font-style: normal;
+    font-weight: lighter;
+    color: white;
+}
+
+.Footer-contenidos{
+    font-size: .8em;
+    font-stretch: extra-expanded;
+}
+
+.Footer-inises{
+    width: 300px;
+}
+
+.Footer-registrarse{
+    width: 300px;
+}
+.Footer-servicios{
+    width: 300px;
+}
+
+.Footer-sub{
+    color: white;
+    text-align: center;
+}
+
+
+.Footer-title{
+    width: 100%;
+    margin: 1em .5em 0 .5em;
+    border-bottom: solid #cccccc;
+    border-bottom-width: 1px;
+}
+
+.Footer-textoCopy{
+    font-style: normal;
+    font-size: .8em;
+    color: #cccccc;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.Footer-titleFirst,.Footer-titleSecond{
+    margin-bottom: 0;
+}
+.Footer-titleFirst{
+    color: #cccccc;
+    font-size: 1.5em; 
+}
+
+.Footer-titleSecond{
+    color: #cccccc;
+    font-weight: lighter;
+    font-stretch: expanded;
+    font-size: 1em;
+    margin-left: 1em;
+}
+.Footer-titleLink{
+    float: right;
+    margin-right: 2em;
+    color: #cccccc;
+    font-weight: lighter;
+    font-stretch: expanded;
+    font-size: .8em;
+    position: relative;
+    top: 10px;
+}
 .Formulario-isesion{
     margin-top: 20px;
 }
@@ -25,6 +111,7 @@
 .Formulario{
     margin-top: 20px;
 }
+
 .Profile{
     text-align: center;
     background: #ECEBEC;
